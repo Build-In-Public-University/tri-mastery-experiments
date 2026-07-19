@@ -1,0 +1,17 @@
+{
+  "artifact": "tri_mastery_experiment_manifest",
+  "artifacts": {
+    "twitter_funnel_prereg": {
+      "body_sha256": "3484c02e3ce555ed1bfd3642db923742bdf8f73ea64dbd89281e65eb7781d2de",
+      "path": "twitter_funnel_prereg.json",
+      "sha256": "cb02b2a3827d3125b9102f71581c67fa0b8bf5b3d31defcc269e4db71e92cd85"
+    }
+  },
+  "created_at_utc": "2026-07-19T01:51:04.458270+00:00",
+  "external_actions": {
+    "analytics_called": false,
+    "payment_link_created_or_modified": false,
+    "posted_to_x": false
+  },
+  "status": "sealed_before_first_post"
+}

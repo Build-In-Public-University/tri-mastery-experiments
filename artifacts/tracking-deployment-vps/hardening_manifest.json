@@ -1,0 +1,11 @@
+{
+  "artifact": "tri_mastery_tracking_hardening_manifest",
+  "artifacts": {
+    "hardening_receipt": {
+      "path": "hardening_receipt.json",
+      "sha256": "6d2a8b06f26439b6c4a253ebbb68a5fd1103ece5f0098547b6d3522e07e06263"
+    }
+  },
+  "created_at_utc": "2026-07-19T13:11:26.075789+00:00",
+  "status": "deployed_hardened_verified_public_https"
+}

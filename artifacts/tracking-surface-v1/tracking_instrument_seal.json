@@ -1,0 +1,32 @@
+{
+  "artifact": "tracking_instrument_semantics_seal",
+  "body": {
+    "campaign_id": "tri-mastery-twitter-v1",
+    "denominator_warning": "post_hoc_denominator_adjustment_is_metric_shopping_with_extra_steps",
+    "known_slugs": {
+      "tm-v1-alpha-conversations": "V3-alpha-in-conversations",
+      "tm-v1-null-duck": "V1-null-duck",
+      "tm-v1-receipt-loop": "V2-receipt-loop"
+    },
+    "null_result_policy": "compare_variant_rates_against_each_other_and_preregistered_predictions_not_industry_baselines",
+    "status": "sealed_before_first_visit",
+    "storage_policy": "raw_events_append_only_aggregates_derived_at_read_time",
+    "visit_definition": {
+      "allowed_query_params": [
+        "ref",
+        "utm_campaign",
+        "utm_content",
+        "utm_medium",
+        "utm_source"
+      ],
+      "bot_filtering": "conservative_known_bot_user_agent_filter_on_raw_events_retained",
+      "counts_as_visit": "http_request_to_known_slug_landing_or_redirect_route",
+      "dedup_key": "slug_plus_salted_ip_hash_plus_salted_user_agent_hash",
+      "dedup_window_seconds": 86400,
+      "hashing_salt_policy": "required_secret_runtime_env_not_stored_in_repo_or_events",
+      "param_stripping": "strip_all_query_params_except_declared_utm_and_ref"
+    }
+  },
+  "sealed_at_utc": "2026-07-19T13:05:52.694308+00:00",
+  "sha256": "11d9e9b0be08a8a1fc6d5dc3a1e8cc2012bfce04c8404488b435664d48ea00cc"
+}

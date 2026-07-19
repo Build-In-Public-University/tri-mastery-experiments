@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.private.json
+*.private.env
+artifacts/tmp/
+data/
+artifacts/tracking-backups/
+artifacts/**/raw_visit_events.jsonl

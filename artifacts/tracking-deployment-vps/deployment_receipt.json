@@ -1,0 +1,65 @@
+{
+  "app_dir": "/opt/tri-mastery-tracking",
+  "artifact": "tri_mastery_tracking_vps_deployment_receipt",
+  "created_at_utc": "2026-07-19T12:38:37.965977+00:00",
+  "external_actions": {
+    "deployed": true,
+    "external_analytics_called": false,
+    "payment_link_created_or_modified": false,
+    "posted_to_x": false
+  },
+  "health_response": {
+    "campaign_id": "tri-mastery-twitter-v1",
+    "known_slugs": [
+      "tm-v1-alpha-conversations",
+      "tm-v1-null-duck",
+      "tm-v1-receipt-loop"
+    ],
+    "ok": true,
+    "tracking_seal_sha256": "c543c7a0b79a1d1f6feab2c9b4491227aff4894a218980ae4b0d86f66ce9be32",
+    "tracking_status": "sealed_before_first_visit"
+  },
+  "nginx_notes": [
+    "Used existing HTTPS host arc.metaspn.network under /tm/.",
+    "sites-enabled and sites-available arc configs diverged; patched enabled config because nginx reads it.",
+    "Backups written under /root/nginx-backups, not sites-enabled."
+  ],
+  "port": "127.0.0.1:8830",
+  "public_base_url": "https://arc.metaspn.network/tm",
+  "public_smoke": {
+    "aggregate_after_smoke": {
+      "tm-v1-alpha-conversations": {
+        "bot_excluded_events": 0,
+        "counted_unique_visits": 0,
+        "raw_events": 0,
+        "variant_id": "V3-alpha-in-conversations"
+      },
+      "tm-v1-null-duck": {
+        "bot_excluded_events": 1,
+        "counted_unique_visits": 0,
+        "raw_events": 1,
+        "variant_id": "V1-null-duck"
+      },
+      "tm-v1-receipt-loop": {
+        "bot_excluded_events": 0,
+        "counted_unique_visits": 0,
+        "raw_events": 0,
+        "variant_id": "V2-receipt-loop"
+      }
+    },
+    "bot_excluded_smoke": true,
+    "counted_audience_visits_added_by_smoke": 0,
+    "raw_event_count_after_smoke": 1
+  },
+  "public_urls": {
+    "V1-null-duck": "https://arc.metaspn.network/tm/tm-v1-null-duck",
+    "V2-receipt-loop": "https://arc.metaspn.network/tm/tm-v1-receipt-loop",
+    "V3-alpha-in-conversations": "https://arc.metaspn.network/tm/tm-v1-alpha-conversations",
+    "aggregate": "https://arc.metaspn.network/tm/aggregate",
+    "health": "https://arc.metaspn.network/tm/health",
+    "raw_count": "https://arc.metaspn.network/tm/raw-events/count"
+  },
+  "status": "deployed_verified_public_https",
+  "systemd_service": "tri-mastery-tracking.service",
+  "vps_host_alias": "arc-vps"
+}

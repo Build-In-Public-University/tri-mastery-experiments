@@ -1,0 +1,38 @@
+{
+  "artifact": "tracking_surface_manifest",
+  "artifacts": {
+    "derived_visit_aggregate": {
+      "path": "derived_visit_aggregate.json",
+      "sha256": "c8a7aa25ce4a45f102c3660ee3528a2f44d51b8035afbaaa28fbd69347c4a986"
+    },
+    "public_tm_v1_alpha_conversations": {
+      "path": "public/tm-v1-alpha-conversations.html",
+      "sha256": "074050aa6d875ef1c4868ab716999ee7d8b6d787e090175e688e7c9f76a534d0"
+    },
+    "public_tm_v1_null_duck": {
+      "path": "public/tm-v1-null-duck.html",
+      "sha256": "069280ae51a375e8f85fffd65dc57b33c0e9405042f9eaeba0136ad159aba17e"
+    },
+    "public_tm_v1_receipt_loop": {
+      "path": "public/tm-v1-receipt-loop.html",
+      "sha256": "eb1c3640d21d9d843c891e4bff163b72429e1cd943a09a64975427ae7d092931"
+    },
+    "raw_visit_events": {
+      "path": "raw_visit_events.jsonl",
+      "sha256": "1f673fd8ef7620607793c1346ed2c11fb4acf0a0c104dff67b5fb6cb1c14747b"
+    },
+    "tracking_instrument_seal": {
+      "body_sha256": "11d9e9b0be08a8a1fc6d5dc3a1e8cc2012bfce04c8404488b435664d48ea00cc",
+      "path": "tracking_instrument_seal.json",
+      "sha256": "96f61e65726a48cf38e3f8f6a10bcff8e0cc1d799d740e2f48f7e09735516a84"
+    }
+  },
+  "campaign_id": "tri-mastery-twitter-v1",
+  "created_at_utc": "2026-07-19T13:05:52.695654+00:00",
+  "external_actions": {
+    "analytics_called": false,
+    "deployed": false,
+    "posted_to_x": false
+  },
+  "status": "tracking_surface_sealed_no_live_visits"
+}

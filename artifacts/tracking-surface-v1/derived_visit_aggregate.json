@@ -1,0 +1,41 @@
+{
+  "artifact": "derived_visit_aggregate",
+  "definition": {
+    "allowed_query_params": [
+      "ref",
+      "utm_campaign",
+      "utm_content",
+      "utm_medium",
+      "utm_source"
+    ],
+    "bot_filtering": "conservative_known_bot_user_agent_filter_on_raw_events_retained",
+    "counts_as_visit": "http_request_to_known_slug_landing_or_redirect_route",
+    "dedup_key": "slug_plus_salted_ip_hash_plus_salted_user_agent_hash",
+    "dedup_window_seconds": 86400,
+    "hashing_salt_policy": "required_secret_runtime_env_not_stored_in_repo_or_events",
+    "param_stripping": "strip_all_query_params_except_declared_utm_and_ref"
+  },
+  "derived_at_utc": "2026-07-19T13:05:52.695415+00:00",
+  "slugs": {
+    "tm-v1-alpha-conversations": {
+      "bot_excluded_events": 0,
+      "counted_unique_visits": 0,
+      "raw_events": 0,
+      "variant_id": "V3-alpha-in-conversations"
+    },
+    "tm-v1-null-duck": {
+      "bot_excluded_events": 0,
+      "counted_unique_visits": 1,
+      "raw_events": 1,
+      "variant_id": "V1-null-duck"
+    },
+    "tm-v1-receipt-loop": {
+      "bot_excluded_events": 1,
+      "counted_unique_visits": 0,
+      "raw_events": 1,
+      "variant_id": "V2-receipt-loop"
+    }
+  },
+  "source": "raw_visit_events_jsonl",
+  "tracking_seal_sha256": "11d9e9b0be08a8a1fc6d5dc3a1e8cc2012bfce04c8404488b435664d48ea00cc"
+}

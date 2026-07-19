@@ -1,0 +1,82 @@
+{
+  "artifact": "tri_mastery_tracking_vps_hardening_receipt",
+  "crawler_gauntlet_verified": {
+    "raw_retained_not_counted": true,
+    "tm_v1_receipt_loop_after_smoke": {
+      "bot_excluded_events": 4,
+      "counted_unique_visits": 0,
+      "raw_events": 4,
+      "variant_id": "V2-receipt-loop"
+    },
+    "user_agents": [
+      "Twitterbot/1.0",
+      "facebookexternalhit/1.1",
+      "Slackbot-LinkExpanding 1.0",
+      "Googlebot/2.1"
+    ]
+  },
+  "created_at_utc": "2026-07-19T13:11:26.075789+00:00",
+  "external_actions": {
+    "deployed": true,
+    "external_analytics_called": false,
+    "metaculus_forecast_submitted": false,
+    "payment_link_created_or_modified": false,
+    "posted_to_x": false
+  },
+  "health_response": {
+    "campaign_id": "tri-mastery-twitter-v1",
+    "hash_salt_configured": true,
+    "known_slugs": [
+      "tm-v1-alpha-conversations",
+      "tm-v1-null-duck",
+      "tm-v1-receipt-loop"
+    ],
+    "ok": true,
+    "tracking_seal_sha256": "11d9e9b0be08a8a1fc6d5dc3a1e8cc2012bfce04c8404488b435664d48ea00cc",
+    "tracking_status": "sealed_before_first_visit"
+  },
+  "metaculus_fresh_token_health": {
+    "body_sha256": "e0b04321d1b4af49c66c2546a59aae01d07ab60f6c3c5adf84eb8c9cb508ffde",
+    "result_count": 1,
+    "status": 200
+  },
+  "nginx": {
+    "active_config_sha256": "d107608a9ac8b77f3480d3dabdbaf357b951eb343036cf74736529d922c44572",
+    "backups_location": "/root/nginx-backups",
+    "sites_enabled_symlink_target": "/etc/nginx/sites-available/arc.metaspn.network",
+    "standard_symlink_layout_restored": true
+  },
+  "off_box_backup": {
+    "cron_job_id": "4384fcb28dd3",
+    "latest_backup": {
+      "artifact": "tri_mastery_tracking_raw_backup",
+      "created_at_utc": "2026-07-19T13:09:56.297592+00:00",
+      "line_count": 7,
+      "local_path": "/Users/leoguinan/Projects/tri-mastery-experiments/artifacts/tracking-backups/20260719T130954Z/raw_visit_events.jsonl",
+      "remote": "arc-vps:/opt/tri-mastery-tracking/data/raw_visit_events.jsonl",
+      "sha256": "8e996af14dfe9b3fda110d695e256edec306f48b592f0d6418e2d27246cfda39",
+      "status": "ok_hash_matched"
+    },
+    "schedule": "0 3 * * * local-only"
+  },
+  "positive_path_verified": {
+    "human_like_different_fingerprint_counted_second_unique": true,
+    "human_like_same_fingerprint_twice_same_dedup_window_counted_once": true,
+    "tm_v1_null_duck_after_smoke": {
+      "bot_excluded_events": 0,
+      "counted_unique_visits": 2,
+      "raw_events": 3,
+      "variant_id": "V1-null-duck"
+    }
+  },
+  "public_base_url": "https://arc.metaspn.network/tm",
+  "raw_event_state_after_smoke": {
+    "raw_event_count": 7
+  },
+  "salt": {
+    "policy": "TRI_MASTERY_HASH_SALT stored in /opt/tri-mastery-tracking/.env only, not repo or raw events",
+    "runtime_env_present_masked": true,
+    "seal_sha256": "11d9e9b0be08a8a1fc6d5dc3a1e8cc2012bfce04c8404488b435664d48ea00cc"
+  },
+  "status": "deployed_hardened_verified_public_https"
+}

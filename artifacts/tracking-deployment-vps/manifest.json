@@ -1,0 +1,11 @@
+{
+  "artifact": "tri_mastery_tracking_deployment_manifest",
+  "artifacts": {
+    "deployment_receipt": {
+      "path": "deployment_receipt.json",
+      "sha256": "029af342322b5602fac26db1de2a11cd40021b41ad2c29c4566b0bee966b5581"
+    }
+  },
+  "created_at_utc": "2026-07-19T12:38:37.965977+00:00",
+  "status": "deployed_verified_public_https"
+}
